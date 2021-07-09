@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-image: url(https://source.unsplash.com/random/2411x1253);
+}
+a{
+    text-decoration:none;
+}
+main a{
+    color:white;
+    background-color: #F37F14;
+    padding: 10px;
+    border-radius:10px;
+    font-family:"roboto-condensed-bold";
+    margin-bottom: 15vh;
+
+}
+nav a{
+    color: black;
+    font-family: 'roboto-condensed-bold';
+    background-color: #EFDE46;
+    padding: 5px;
+    border-radius:10px;
+}
+footer h2{
+    font-size: 3vh;
+    color: white;
+    font-family: 'roboto-condensed-bold';
+    letter-spacing: 3px;
+}
+
+    .principal-mobile{
+        display: grid;
+        grid-template-areas: "nav nav""main main" "footer footer";
+        grid-template-rows: 10vh 80vh 10vh;
+    }
+    nav{
+        grid-area: nav;
+        background-color: #E5A862;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main{
+        grid-area:main;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    footer{
+        grid-area:footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media screen and (max-width:414px){
+    body{
+        background-image: url(https://source.unsplash.com/random/414x821);
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:1024px){
+    body{
+        background-image: url(https://source.unsplash.com/random/1024x1366px);
+        background-repeat:no-repeat;
+    }
+}
+
+@font-face {
+    font-family: 'roboto-condensed-bold';
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
